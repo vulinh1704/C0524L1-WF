@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form And Table</title>
+</head>
+<body>
+    <!-- 
+        <pre>
+        Công cha như núi thái sơn 
+        Nghĩa mẹ như nước trong nguồn chảy ra
+    </pre>
+        p: thẻ văn bản (pre)
+        h: Tiêu đề
+        div: Thẻ khối bọc nhiều thẻ khác bên trong
+        img: Ảnh
+        a: Thẻ Đường dẫn
+        button:Nút nhấn
+        input: Nhập dữ liệu
+        link: cài thư viện vào HTML
+        center: căn vào giữa
+        table, tr, td
+     -->
+     
+
+     <!-- 
+        Form là một CƠ CHẾ cho phép người dùng nhập dữ liệu và gửi lên server
+        Để triển khai cơ chế này trong HTML thì ta sử dụng thẻ form
+        Thuộc tính action: Sẽ quy định nơi dữ liệu được gửi đến
+        Thuộc tính method: Quy định phương thức dữ liệu gửi lên server (POST hoặc GET) - mặc định là GET
+        => GET: Dữ liệu truyền lên thanh URL, không bảo mật, dữ liệu gửi lên có giới hạn và khá ít, thường dùng để tìm kiếm(lấy dữ liệu)
+        => POST: Dữ liệu sẽ gửi body của request, bảo mât hơn GET, thường dành cho (đăng ký, dang nhap nhập, thêm, sửa dữ liệu)
+      -->
+      <!-- <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q">    
+        <button>Nhấn</button>
+      </form> -->
+
+      <!-- Chức năng tìm kiếm của youtube -->
+      <!-- <form action="https://www.youtube.com/results" method="get">
+        <input type="text" name="search_query">
+        <button>Nhấn</button>
+      </form> -->
+
+      <!-- Các loại input trong HTML -->
+      <!-- date, datetime, password, radio, reset, text, checkbox, image, submit, color, file, hidden
+       range,
+        <input type="color">
+     -->
+
+       <h2>Các loại input thường sử dụng</h2>
+       <input type="text"> Nhập chữ
+       <br>
+       <input type="number"> Nhập số
+       <br>
+       <input type="password"> Nhập mật khẩu
+       <br>
+       <input type="date"> Nhập ngày
+       <br>
+       <input type="file"> Nhập file
+       <br>
+       <input type="radio"> CHọn 1 trong nhiều lựa chọn
+       <br>
+       <input type="checkbox"> Chọn nhiều trong nhiều lựa chọn
+       <br>
+       <select> 
+            <option>Mèo</option>
+            <option>CHó</option>
+            <option>Cún</option>
+       </select>
+       Chọn 1 trong nhiều lựa chọn (drop down)
+       <br>
+       <textarea name="" id=""></textarea> CHo nhập văn bản dài
+
+       <br>
+       <button>Nhấn</button>
+       <input type="button" value="Nhấn"> 
+       <input type="submit" value="Submit button">
+       <input type="reset" value="Reset Button"> 
+       <!-- Hoạt động trong form có nhiệm là đưa dữ liệu của các ô input về dữ liệu ban đầu -->
+    
+</body>
+</html>
