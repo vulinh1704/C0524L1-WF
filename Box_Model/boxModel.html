@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        div {
+            background-color: palevioletred;
+            width: 200px;
+            height: 200px; 
+            /* Quy định kích thước cho content */
+            border: 10px solid red; /*<kích thước> <loại viền> <màu>*/
+            /* border-width: 50px 20px; */
+            padding: 50px 20px 10px 5px;
+            /* 1 giá trị: Cách 4 phía là 50px (thường dùng)
+               2 giá trị: Trên dưới 50px, trái phải 20px (thường dùng)
+               3 giá trị: Trên 50, trái phải 20px, dưới 10px
+               4 giá trị: Chiều kim đồng hồ
+            */
+            padding-top: 100px; 
+            /* padding-left, padding-right, padding-bottom */
+
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Box Model: là một kỹ thuật tinh chỉnh lại các phần tử
+     Content: Phần thân (Các thẻ) nằm bên trong thẻ đó
+     Padding: Quy định khoảng cách giữa border và content
+     Border: Đường viên của thẻ đó
+     Margin: Khoảng cách với các phần tử xung quanh.
+
+
+     Note: Khi điều chỉnh border và padding sẽ trực tiếp ảnh hướng đến kích thước của thẻ đó
+    -->
+     <div>
+        Hello Anh em
+        <p>Abc</p>
+     </div>
+     <div>
+        Hello Anh em
+        <p>Abc</p>
+     </div>
+     <div>
+        Hello Anh em
+        <p>Abc</p>
+     </div>
+</body>
+</html>
