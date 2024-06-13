@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Css</title>
+    <style>
+        /* Position: static, relative, absolute, fixed, sticked */
+        /* Các thuộc quy định vị trí của block position:  top, left, bottom, right, z-index */
+
+        .container {
+            width: 100%;
+            height: 2000px;
+            background-color: aquamarine;
+            position: relative;
+            
+        }
+
+        .block {
+            height: 50px;
+            width: 100%;
+        }
+
+        .block-1 {
+            background-color: palevioletred;
+            /* position: static; */
+            /* static là giá trị mặc định của position (không đi cùng top, left, right, bottom) */
+            /* position: relative;  */
+            /* Khi dịch chuyển thì position relative sẽ dịch chuyển so với VỊ TRÍ BAN ĐẦU của nó và Giữ nguyên định dạng ở vị trí ban đầu
+             */
+            /* top: 150px;
+            left: 20px; */
+        }
+
+        .block-2 {
+            background-color: green;
+            /* position: absolute;
+            bottom: 10px; */
+            /*
+             Khi sử dụng position absolute dịch chuyển dựa Phần tử cha gần nhất có sử dụng thuộc position(khác static). 
+             Nếu không có thì dịch chuyển dựa trên trên thẻ <html>
+             thì nó sẽ xóa thẻ khỏi luồng HTMl */
+        }
+
+        .block-3 {
+            background-color: blue;
+            /* position: fixed; */
+            /* Dịch chuyển thì so với thẻ <html>, có tác dụng cố định 1 phần tử tại 1 vị nào đó so với web */;
+            /* top: 0; */
+            height: 65px;
+        }
+
+        .block-4 {
+            background-color: pink; 
+            position: sticky;
+            /* Ít sử dụng */
+            top: 20px;
+            left: 10px;
+            /* position sticky là sự kết hợp của fixed + relative */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="container">
+            <div class="block-1 block">A</div>
+            <div class="block-2 block">B</div>
+            <div class="block-3 block">C</div>
+            <div class="block block-4">D</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

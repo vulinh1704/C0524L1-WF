@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;  
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .nav-bar {
+            height: 80px;
+            width: 100%;
+            background-color: palevioletred;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            /* Độ ưu tiên của position (nếu k có z-index) thẻ viết sau sẽ ưu tiên (thẻ sau đè thẻ trước)
+            .Nếu có z-index thì số càng to thì độ ưu tiên càng cao */
+        }
+
+        .container .main {
+            height: 600px;
+            width: 100%;
+            background-color: antiquewhite;
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .description {
+            width: 25%;
+            height: 100%;
+            background-color: rgba(240, 133, 18, 0.8);
+            position: absolute;
+            top: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar"></div>
+        <div class="main">
+            <div class="img">
+                <img class="img" src="https://png.pngtree.com/thumb_back/fw800/background/20230611/pngtree-clouds-and-flowers-in-pink-landscape-image_2945381.jpg" alt="">
+            </div>
+            <div class="description">
+                ABC
+            </div>
+        </div>
+    </div>
+    <div style="height: 1000px; background-color: aqua; width: 100%;"></div>
+</body>
+</html>
