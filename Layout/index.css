@@ -13,6 +13,7 @@
     width: 100%;
     border: 1px solid black;
     margin-top: 5px;
+    padding: 8px 0;
 }
 
 .main {
@@ -116,4 +117,35 @@
     float: left;
     margin: 5px 5px;
 }
+
+
+.nav-bar .left {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.nav-bar .right {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.nav-bar .left .item {
+    width: 12%;
+    height: 100%;
+    border-left: 1px solid green;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    /* Khi cách phần tử so với viền
+    của cha nó hãy nghĩ tới padding */
+}
+
+.nav-bar .right input {
+    float: right;
+}
+
 
