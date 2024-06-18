@@ -26,7 +26,8 @@
 .footer {
     height: 50px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid red;
+    background-color: red;
     margin-top: 5px;
 }
 
@@ -149,3 +150,52 @@
 }
 
 
+
+@media only screen and (max-width: 900px) {
+    /* Ứng với mà hình dưới 900 thì giao diện sẽ thêm css bên dưới */
+    .main .left {
+        display: none;
+    }
+
+    .main .mid {
+        width: calc(85% - 5px - 5px);
+    }   
+    
+    .mid .list .item {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .mid .list {
+        overflow: scroll; 
+        /* Them thanh cuộn khi các item tràn kích thước của
+        list  */
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main .right {
+        display: none;
+    }
+
+    .main .mid {
+        width: 100%;
+    }
+
+    .mid .list .item {
+        width: calc(100% - 10px);
+    }
+}
+
+
+/* Với màn 600 thì ẩn right và hiển thị 1 item 1 hàng */
+
+
+/* 
+    media query
+
+    Thuc hien nhu tren
+
+    Man 600 cho background-color la pink
+*/
